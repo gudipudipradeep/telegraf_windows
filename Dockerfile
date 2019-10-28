@@ -1,4 +1,4 @@
-FROM ciai-docker-stable-local.artifactory-na.honeywell.com/windows/servercore:1809
+FROM mcr.microsoft.com/windows/servercore:1809
 WORKDIR C:\\install
 ADD https://dl.influxdata.com/telegraf/releases/telegraf-1.12.3_windows_amd64.zip C:\\install\\telegraf.zip
 RUN powershell -Command Expand-Archive 'C:\\install\\telegraf.zip' 'C:\\install\\';
